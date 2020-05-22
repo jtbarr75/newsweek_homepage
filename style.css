@@ -1,5 +1,12 @@
-/* Global */
+/* Header */
 
-* {
-  box-sizing: border-box;
+.header-top {
+  background-color: #f72210;
+  color: #fff;
+  height: 95px;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+  /* background-color: #fff; */
 }
