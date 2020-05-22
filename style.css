@@ -6,6 +6,11 @@
   height: 95px;
 }
 
+.header-top,
+.header-bottom {
+  margin: 0 -15px;
+}
+
 .navbar-toggler-icon {
   color: #fff;
   /* background-color: #fff; */
