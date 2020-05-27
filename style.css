@@ -15,3 +15,35 @@
   color: #fff;
   /* background-color: #fff; */
 }
+
+.main {
+  position: relative;
+}
+
+/* Top Story positioning on mobile */
+
+@media (max-width: 767px) {
+  .top-story {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .column-1 {
+    padding-top: 125px
+   }
+
+  .column-1,
+  .column-2,
+  .column-3 {
+    position: static;
+  }
+}
+
+/* Cutoffs:
+Extra small <576px 	
+Small ≥576px 	
+Medium ≥768px 	
+Large ≥992px 	
+Extra large ≥1200px
+ */
