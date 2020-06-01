@@ -16,8 +16,163 @@
   /* background-color: #fff; */
 }
 
+/* Main Content */
+
+.container-lg,
+.container-xl {
+  max-width: 1310px;
+}
+
 .main {
   position: relative;
+}
+
+.block-title {
+  color: rgba(3,3,3,.4);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+article {
+  padding: 15px 0;
+}
+
+article h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+article h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(3,3,3,.5);
+  margin-bottom: 10px;
+}
+
+.article-text {
+  padding-left: 0;
+}
+
+.article-text h4 {
+  color: #000;
+}
+
+article p,
+.byline {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.image-wrapper {
+  margin-bottom: 10px;
+  min-height: 33px;
+  display: block;
+  position: relative;
+}
+
+.category-label {
+  display: block;
+  font: bold 17px/16px "Roboto Condensed",sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: rgba(255,255,255,.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.category-label a {
+  color: inherit;
+}
+
+.label-small {
+  font: bold 13px/20px "Roboto condensed",Arial,sans-serif;
+  background-color: #c2d4d7;
+  padding: 0 6px;
+  color: #666;
+}
+
+.opinion-block {
+  padding-top: 10px;
+}
+
+/* Debate */
+
+.debate-item-1 {
+  border-top: 4px solid #f92859;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-top: 15px;
+}
+
+.debate-item-2 {
+  border-bottom: 4px solid #1c87fb;
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  background-color: #f72210;
+  overflow: hidden;
+  position: relative;
+}
+
+.headshot-image {
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+}
+
+.text-blue {
+  color: #1c87fb;
+}
+
+.debate-info {
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  /* margin-bottom: 10px; */
+}
+
+.debate-seperator {
+  height: 4px;
+  margin-bottom: 20px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.debate-vs {
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/32px "Roboto Condensed",sans-serif;
+  text-align: center;
+  margin: -16px auto 6px auto;
+}
+
+/* Images */
+
+.article-image {
+  width: 100%;
 }
 
 /* Top Story positioning on mobile */
@@ -29,8 +184,8 @@
     width: 100%;
   }
 
-  .column-1 {
-    padding-top: 125px
+  .featured-first {
+    padding-top: 90%;
    }
 
   .column-1,
@@ -40,6 +195,11 @@
   }
 }
 
+@media (max-width: 575px) {
+  .featured-first {
+    padding-top: calc(90% + 3em);
+   }
+}
 /* Cutoffs:
 Extra small <576px 	
 Small ≥576px 	
